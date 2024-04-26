@@ -36,3 +36,6 @@ let secondString = 'And so is this';
 let daysInWeek = 7;
 let pi = 3.14;
 let hexValue = 0xffff;
+
+let person1 = 'Alice';
+let person2: string | undefined = 'Bob';
