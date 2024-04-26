@@ -1,4 +1,4 @@
-function myFunction(param: number) {
+function myFunction(param: number | string) {
   if (typeof param == 'number' || typeof param == 'string') {
     let result = param + 100;
     console.log('My result: ' + result);
@@ -8,4 +8,4 @@ function myFunction(param: number) {
 }
 
 myFunction(1);
-// myFunction('London');
+myFunction('London');
