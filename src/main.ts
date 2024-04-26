@@ -1,9 +1,10 @@
 function myFunction(param: number | string) {
-  if (typeof param == 'number' || typeof param == 'string') {
-    let fixed = param.toFixed(2);
-    console.log('My result: ' + fixed);
+  if (typeof param == 'number') {
+    let numberResult = param.toFixed(2);
+    console.log('My result: ' + numberResult);
   } else {
-    throw 'Expected a number or a string: ' + param;
+    let stringResult = param + 100;
+    console.log('My result: ' + stringResult);
   }
 }
 
