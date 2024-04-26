@@ -39,3 +39,25 @@ let hexValue = 0xffff;
 
 let person1 = 'Alice';
 let person2: string | undefined = 'Bob';
+
+let firstName = 'Adam';
+
+if (firstName == 'Adam') {
+  console.log('firstName is Adam');
+} else if (firstName == 'Jacqui') {
+  console.log('firstName is Jaqcui');
+} else {
+  console.log('firstName is neither Adam or Jacqui');
+}
+
+switch (firstName) {
+  case 'Adam':
+    console.log('firstName is Adam');
+    break;
+  case 'Jaqcui':
+    console.log('firstName is Jaqcui');
+    break;
+  default:
+    console.log('firstName is neither Adam or Jacqui');
+    break;
+}
