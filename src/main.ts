@@ -3,7 +3,7 @@ function myFunction(param: number) {
     let result = param + 100;
     console.log('My result: ' + result);
   } else {
-    throw 'Expected a number: ' + param;
+    throw 'Expected a number or a string: ' + param;
   }
 }
 
