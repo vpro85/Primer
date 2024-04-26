@@ -70,3 +70,9 @@ if (firstVal == secondVal) {
 } else {
   console.log('They are NOT the same');
 }
+
+if (firstVal === secondVal) {
+  console.log('They are the same');
+} else {
+  console.log('They are NOT the same');
+}
