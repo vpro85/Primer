@@ -10,3 +10,7 @@ function myFunction(param: number | string) {
 
 myFunction(1);
 myFunction('London');
+
+let condition = true;
+let person = "Bob";
+const age = 40;
