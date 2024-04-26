@@ -62,8 +62,8 @@ switch (firstName) {
     break;
 }
 
-let firstVal: any = 5;
-let secondVal: any = '5';
+let firstVal = 5;
+let secondVal = '5';
 
 if (firstVal == secondVal) {
   console.log('They are the same');
