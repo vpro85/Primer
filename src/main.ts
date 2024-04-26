@@ -65,14 +65,20 @@ switch (firstName) {
 let firstVal = 5;
 let secondVal = '5';
 
-if (firstVal == secondVal) {
-  console.log('They are the same');
-} else {
-  console.log('They are NOT the same');
-}
+// if (firstVal == secondVal) {
+//   console.log('They are the same');
+// } else {
+//   console.log('They are NOT the same');
+// }
 
-if (firstVal === secondVal) {
-  console.log('They are the same');
-} else {
-  console.log('They are NOT the same');
-}
+// if (firstVal === secondVal) {
+//   console.log('They are the same');
+// } else {
+//   console.log('They are NOT the same');
+// }
+
+let myData1 = 5 + 5;
+let myData2 = 5 + "5";
+
+console.log(`Result 1: ${myData1}, Type: ${typeof(myData1)}`);
+console.log(`Result 2: ${myData2}, Type: ${typeof(myData2)}`);
