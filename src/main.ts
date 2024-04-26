@@ -1,4 +1,4 @@
-function myFunction(param: any) {
+function myFunction(param: number) {
   if (typeof param == 'number') {
     let result = param + 100;
     console.log('My result: ' + result);
