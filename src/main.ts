@@ -6,6 +6,6 @@ function myFunction(param: any) {
     throw 'Expected a number: ' + param;
   }
 }
-s
+
 myFunction(1);
 myFunction('London');
