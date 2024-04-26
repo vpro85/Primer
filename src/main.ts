@@ -11,6 +11,6 @@ function myFunction(param: number | string) {
 myFunction(1);
 myFunction('London');
 
-let condition = true;
-let person = "Bob";
-const age = 40;
+let condition: boolean = true;
+let person: string = 'Bob';
+const age: number = 40;
