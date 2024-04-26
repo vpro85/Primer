@@ -26,3 +26,6 @@ console.log('Place value: ' + place + ' Type: ' + typeof place);
 
 let firstBool = true;
 let secondBool = false;
+
+let firstString = "This is a string";
+let secondString = 'And so is this';
