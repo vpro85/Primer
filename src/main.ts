@@ -82,3 +82,12 @@ let myData2 = Number(5) + parseInt('5');
 
 console.log(`Result 1: ${myData1}, Type: ${typeof myData1}`);
 console.log(`Result 2: ${myData2}, Type: ${typeof myData2}`);
+
+let val1: string | undefined;
+let val2: string | undefined = 'London';
+
+let coalesced1 = val1 || 'fallback value';
+let coalesced2 = val2 || 'fallback value';
+
+console.log(`Result 1: ${coalesced1}`);
+console.log(`Result 2: ${coalesced2}`);
