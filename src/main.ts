@@ -77,14 +77,8 @@ let secondVal = '5';
 //   console.log('They are NOT the same');
 // }
 
-let myData1 = 5 + 5;
-let myData2 = 5 + '5';
+let myData1 = (5).toString() + String(5);
+let myData2 = Number(5) + parseInt('5');
 
 console.log(`Result 1: ${myData1}, Type: ${typeof myData1}`);
 console.log(`Result 2: ${myData2}, Type: ${typeof myData2}`);
-
-let myData3 = (5).toString() + String(5);
-let myData4 = 5 + '5';
-
-console.log(`Result 3: ${myData3}, Type: ${typeof myData3}`);
-console.log(`Result 4: ${myData4}, Type: ${typeof myData4}`);
