@@ -129,11 +129,14 @@ let myCity = 'Rome';
 writeCity(() => myCity);
 
 let myArray: (number | string | boolean)[] = [100, 'Adam', true];
+let otherArray = [...myArray, 200, 'Bob', false];
 
-for (let i = 0; i < myArray.length; i++) {
-  console.log('Index ' + i + ': ' + myArray[i]);
-}
+// for (let i = 0; i < myArray.length; i++) {
+//   console.log('Index ' + i + ': ' + myArray[i]);
+// }
 
-console.log('---');
+// console.log('---');
 
-myArray.forEach((value, index) => console.log('Index ' + index + ': ' + value));
+otherArray.forEach((value, index) =>
+  console.log('Index ' + index + ': ' + value)
+);
