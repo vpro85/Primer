@@ -104,9 +104,10 @@ if (count != null && count !== undefined) {
 let result2: string | undefined = count?.toFixed(2);
 console.log(`Result 2: ${result2}`);
 
-function writeValue(val: string = 'default value') {
-  console.log(`Value: ${val}`);
+function writeValue(val: string, ...extraInfo: string[]) {
+  console.log(`Value: ${val}, Extras: ${extraInfo}`);
 }
 
-writeValue('London');
-writeValue();
+writeValue('London', 'Raining', 'Cold');
+writeValue('Paris', 'Sunny');
+writeValue('New York');
