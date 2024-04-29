@@ -147,16 +147,31 @@ otherArray.forEach((value, index) =>
   console.log('Index ' + index + ': ' + value)
 );
 
-let hat = {
-  name: 'Hat',
-  price: 100,
-};
+// let hat = {
+//   name: 'Hat',
+//   price: 100,
+// };
 
-let boots = {
-  name: 'Boots',
-  price: 100,
-  category: 'Snow Gear',
-};
+// let boots = {
+//   name: 'Boots',
+//   price: 100,
+//   category: 'Snow Gear',
+// };
+
+class Product {
+  constructor(name: string, price: number, category?: string) {
+    this.name = name;
+    this.price = price;
+    this.category = category;
+  }
+
+  name: string;
+  price: number;
+  category?: string;
+}
+
+let hat = new Product('Hat', 100);
+let boots = new Product('Boots', 100, 'Snow Gear');
 
 function printDetails(product: {
   name: string;
