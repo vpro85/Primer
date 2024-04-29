@@ -1,3 +1,5 @@
+import { Name, WeatherLocation } from './modules/NameAndWeather';
+
 function myFunction(param: number | string) {
   if (typeof param == 'number') {
     let numberResult = param.toFixed(2);
@@ -200,3 +202,9 @@ console.log(`Hat is a Product? ${hat instanceof Product}`);
 console.log(`Hat is a DiscountProduct? ${hat instanceof DiscountProduct}`);
 console.log(`Boots is a Product? ${boots instanceof Product}`);
 console.log(`Boots is a DiscountProduct? ${boots instanceof DiscountProduct}`);
+
+let name = new Name('Adam', 'Freeman');
+let loc = new WeatherLocation('raining', 'London');
+
+console.log(name.nameMessage);
+console.log(loc.weatherMessage);

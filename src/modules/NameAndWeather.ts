@@ -7,7 +7,7 @@ export class Name {
 
 export class WeatherLocation {
   constructor(public weather: string, public city: string) {}
-  get nameMessage() {
+  get weatherMessage() {
     return `It is ${this.weather} in ${this.city}`;
   }
 }
