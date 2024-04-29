@@ -155,6 +155,7 @@ let hat = {
 let boots = {
   name: 'Boots',
   price: 100,
+  category: 'Snow Gear',
 };
 
 function printDetails(product: { name: string; price: number }) {
