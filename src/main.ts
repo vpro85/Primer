@@ -193,5 +193,10 @@ class DiscountProduct extends Product {
 let hat = new DiscountProduct('Hat', 100, 10);
 let boots = new Product('Boots', 100, 'Snow Gear');
 
-hat.printDetails();
-boots.printDetails();
+// hat.printDetails();
+// boots.printDetails();
+
+console.log(`Hat is a Product? ${hat instanceof Product}`);
+console.log(`Hat is a DiscountProduct? ${hat instanceof DiscountProduct}`);
+console.log(`Boots is a Product? ${boots instanceof Product}`);
+console.log(`Boots is a DiscountProduct? ${boots instanceof DiscountProduct}`);
