@@ -104,10 +104,13 @@ if (count != null && count !== undefined) {
 let result2: string | undefined = count?.toFixed(2);
 console.log(`Result 2: ${result2}`);
 
-function writeValue(val: string, ...extraInfo: string[]) {
-  console.log(`Value: ${val}, Extras: ${extraInfo}`);
+function composeString(val: string): string {
+  return `Composed string: ${val}`;
 }
 
-writeValue('London', 'Raining', 'Cold');
-writeValue('Paris', 'Sunny');
-writeValue('New York');
+function writeValue(val?: string) {
+  console.log(composeString(val ?? 'Fallback value'));
+}
+
+writeValue('London');
+writeValue();
