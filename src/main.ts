@@ -159,15 +159,19 @@ otherArray.forEach((value, index) =>
 // };
 
 class Product {
-  constructor(name: string, price: number, category?: string) {
-    this.name = name;
-    this.price = price;
-    this.category = category;
+  constructor(
+    public name: string,
+    public price: number,
+    public category?: string
+  ) {
+    // this.name = name;
+    // this.price = price;
+    // this.category = category;
   }
 
-  name: string;
-  price: number;
-  category?: string;
+  // name: string;
+  // price: number;
+  // category?: string;
 
   printDetails() {
     if (this.category != undefined) {
